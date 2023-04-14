@@ -5,16 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Resume</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/b531740af4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav id="navbar">
-        <a class="nav-link" href="#education">Education</a>
-        <a class="nav-link" href="#experience">Experience</a>
-        <a class="nav-link" href="#skills">Skills</a>
-        <a class="nav-link" href="#contact">Contact</a>
-        
+    <nav>
+        <a class="nav-button" href="#experience">
+            <button>Experience</button>
+        </a>
+        <a class="nav-button" href="#education">
+            <button>Education</button>
+        </a>
+
+        <a class="nav-button" href="#skills">
+            <button>Skills</button>
+        </a>
+
+        <a class="nav-button" href="#contact">
+            <button>Contact</button>
+        </a>
     </nav>
     <header id="top">
         <div>
@@ -28,23 +37,22 @@
             header {
                 background-image: url(./images/hero-image.jpg);
                 background-repeat: no-repeat;
-                background-attachment: local;
+                background-attachment: fixed;
                 background-size: cover;
-                position: relative;
+                position: relative,
             }
         </style>
         <div class="header-content">
             <h1>Mpho Theletsane</h1>
             <h3>Software Developer</h3>
             
-            <p>
+            
                 I am a Software Development student, seeking to build a career in a growing organisation, where I will get 
-                an opportunity to prove my ablilites and accept challenges.My studies have prepared me to learn rapidly, and 
-                I am committed to learning new technologies and languages.
-            </p>
+                an opportunity to prove my ablilites and accept challenges.My studies have prepared me to learn rapidly.
+            
              <p>
             
-            <div class="social-icon">
+            <div class="github-icon">
                <button> <a href="https://github.com/mphotheletsane">
                 
                     <i class="fa-brands fa-github"></i>  
@@ -99,7 +107,15 @@
            <p>
             I have completed an N6 certificate in Public Management and Administration, majoring in Public Administration and Municipal Management, with the focus of all three levels of government and the private sector.
            </p>
-
+           <h2 id="skills">Skills</h2>
+      <p>
+        <ul>
+          <li>HTML</li>
+          <li>Github </li>
+          <li>Computer Literacy</li>
+          <li>Good inerpersonal skills</li>
+        </ul>
+    </p>
           
           
         </section>
@@ -109,13 +125,13 @@
             
             <h2>Contacts</h2>
             <p>
-             <a class="social-icon">
+             <a class="phone-icon">
                 <i class="fa-solid fa-envelope fa-xl"></i>
                 <span>mphojoyce29@gmail.com</span>
              </a>
             </p>
             <p>
-                <a class="social-icon">
+                <a class="phone-icon">
                     <i class="fa-solid fa-phone fa-xl"></i>  
                     <span>067 364 8225</span>
                 </a>
@@ -123,16 +139,22 @@
             <h4>
                 Socials:
             </h4>
+            
+        <div class="icons">
             <a class="social-icon" href="https://facebook.com/mphojoyce29">
-                <i class="fa-brands fa-facebook fa-2xl"></i>
+                <i class="fa-brands fa-facebook fa-2xl" ></i>
+                
             </a>
             
             <a class="social-icon" href="https://github.com/mphotheletsane">
                 <i class="fa-brands fa-github fa-2xl"></i>
+                
                </a>
                <a class="social-icon" href="https://linkedin.com/in/mpho-theletsane2a98a7198">
                 <i class="fa-brands fa-linkedin fa-2xl"></i>
+                
                </a>
+               </div>
             
 
             
@@ -140,7 +162,7 @@
             
             
                     <h2>Contact form</h2>
-                    <form action="https://formsubmit.co/mphojoyce29@gmail.com" method="POST"
+                    <form action="https://formsubmit.co/mphojoyce29@gmail.com" method="POST">
                         
                         <label for="name:">Name:</label>
                         <input type="text" name="name" required>

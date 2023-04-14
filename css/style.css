@@ -1,6 +1,6 @@
 /* ---- General ---- */
 body {
-    background-color: white;
+    background-color: aquamarine;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
 }
@@ -36,27 +36,31 @@ body {
 
 /* ---- Nav ---- */
 #navbar {
-    background-color: rgb(23, 23,23);
-    color: white;
+    background-color: rgb(181, 18, 18);
+    color: rgb(174, 97, 14);
     text-align: center;
     z-index: 1;
     position: sticky;
     top: 0px;
 }
-.nav-link {
-    text-decoration: none;
-    color: white;
-    margin: 0 4vw;
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.nav-button > button{
+    width: 100%;
+    height: 100%;
+
 }
 .nav-link:hover {
-    color: rgb(219, 191, 63);
+    color: rgb(76, 63, 219);
     text-decoration: none;
 }
 /* ---- Header ---- */
 #top {
     border: #9ac20a;
     display: flex;
-    background-color: rgb(47, 50, 60);
+    background-color: rgb(18, 39, 109);
     color: rgb(0, 0, 0);
     padding: 4rem;
     padding-bottom: 5rem;
@@ -64,7 +68,9 @@ body {
     font-weight: bolder;
 }
 .header-content {
-    padding: 1rem;
+    padding-right: 1rem;
+    padding-left: 2 rem;
+    top: 2px;
 }
 #header-image {
     border-radius: 10%;
@@ -88,7 +94,14 @@ h3 {
     font-style: italic;
     font-weight: lighter;
     font-size: smaller;
-    color: rgb(25, 177, 223);
+    color: rgb(24, 4, 153);
+}
+p {
+    padding: 1rem;
+    padding-left: 0%;
+    padding-right: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
 }
 /* ---- Footer ---- */
 #footer {
@@ -98,7 +111,70 @@ h3 {
     text-align: center;
     padding: 2rem;
 }
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-icon {
+  border-radius: 100px;  
+  margin: 20px;
+  text-align: center;
+  
+  line-height: 50px;
+  font-family: sans-serif;
+  overflow: visible;
+  transition: all 2s ease-out;
+}
+.social-icon:hover {
+  cursor: pointer; 
+  display: flex; 
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+/* ---- Mobile----- */
+@media only screen and (max-width:650px){
+    body { 
+        background-color: rgb(0, 255, 251);
+        font-size: 3vw ;
+        padding: 2rem;
+    }
+    .hero-image { font-size: 2vh;
+        padding: 2rem;
+    }
+    h1 {
+        font-size: 4vh;
+      
+    }
+    h2 {
+        font-size: 3vh;
+    }
+    h3 {
+        font: 2vh;
+    }
+    p {
+        font-size: 1.2vh;
+        text-size-adjust: 1.2vh;
+    }
+    #header-content {
+        font-size: 2vh ;
+    }
 
+    }
+    /*---- Tablet ----- */
+    @media only screen and (max-width: 946px) {
+        body {
+            background-color: rgb(240, 10, 190);
+            size: 5vh;
+            padding: 20px,
+
+        }
+        
+    }
+
+    
+        
 
 
 
