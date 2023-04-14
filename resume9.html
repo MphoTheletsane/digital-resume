@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Resume</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/b531740af4.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav id="navbar">
@@ -18,12 +19,161 @@
     <header id="top">
         <div>
             <picture>
-                <source media="(max-width: 600px)" srcset="./images/mpho.jpg">
+                <source media="(max-width: 650px)" srcset="./images/mpho.jpg">
+                <source media="(max-width: 100px)" srcset="./images/joyce.jpg">
+                <img id="header-image" src="./images/profile-picture.jpg" alt="header-image">
             </picture>
         </div>
+        <style type="text/css">
+            header {
+                background-image: url(./images/hero-image.jpg);
+                background-repeat: no-repeat;
+                background-attachment: local;
+                background-size: cover;
+                position: relative;
+            }
+        </style>
+        <div class="header-content">
+            <h1>Mpho Theletsane</h1>
+            <h3>Software Developer</h3>
+            
+            <p>
+                I am a Software Development student, seeking to build a career in a growing organisation, where I will get 
+                an opportunity to prove my ablilites and accept challenges.My studies have prepared me to learn rapidly, and 
+                I am committed to learning new technologies and languages.
+            </p>
+             <p>
+            
+            <div class="social-icon">
+               <button> <a href="https://github.com/mphotheletsane">
+                
+                    <i class="fa-brands fa-github"></i>  
+                    <span>Github</span>
+                    </button>
+                    <button>Contact</button>
+                    </p>
+
+                </a>
+            </div>
+
+        </div>
+        <a id="back-to-top" href="#top">
+            <button>
+                &UpArrow;
+            </button>
+        </a>
 
     </header>
-    
-    
+
+    <article>
+        <section>
+          <h2 id="experience">Experience</h2>
+          <h3>July 2021 - present</h3>
+          <p> Lab Facilitator at <a href="https://clicklearning.org/">Click Learning</a>
+            <ul>
+                <li>Ensuring that learners you the progrom optimally</li>
+                <li>Assissting learners during their lessons as trained ny The Click Foundation</li>
+                <li>Ensuring that all computersa are ready, switched on and  connected to the internet</li>
+                <li>Checking the functioning of the computers and reporting the problems to the principal</li>
+            </ul>
+          </p>
+            <h3>January 2020 - June 2021</h3>
+          <p>
+            Administration Assistant at Bophelong Clinic
+            <ul>
+                <li>Filing patients documents</li>
+                <li>Booking patients next appointments</li>
+                <li>Data capturing</li>
+                <li>Recording all patients entering the clinic</li>
+            </ul>
+          </p>
+          <h2 id="education">Education</h2>
+          <h3>March 2023 - present</h3>
+          <p>Intro to Web at <a href="https://www.codespace.co.za" >CodeSpace Academy</a></p>
+          <p>Currently studying towards completing Software Development course within an ever-changing global economy
+            
+          </p>
+
+          <h3>July 2017 - November 2019</h3>
+          <p>Public Management at <a href="https://www.tnc.edu.za">Tshwane North TVET College</a></p>
+           <p>
+            I have completed an N6 certificate in Public Management and Administration, majoring in Public Administration and Municipal Management, with the focus of all three levels of government and the private sector.
+           </p>
+
+          
+          
+        </section>
+    </article>
+    <footer>
+        <footer id="footer">
+            
+            <h2>Contacts</h2>
+            <p>
+             <a class="social-icon">
+                <i class="fa-solid fa-envelope fa-xl"></i>
+                <span>mphojoyce29@gmail.com</span>
+             </a>
+            </p>
+            <p>
+                <a class="social-icon">
+                    <i class="fa-solid fa-phone fa-xl"></i>  
+                    <span>067 364 8225</span>
+                </a>
+            </p>
+            <h4>
+                Socials:
+            </h4>
+            <a class="social-icon" href="https://facebook.com/mphojoyce29">
+                <i class="fa-brands fa-facebook fa-2xl"></i>
+            </a>
+            
+            <a class="social-icon" href="https://github.com/mphotheletsane">
+                <i class="fa-brands fa-github fa-2xl"></i>
+               </a>
+               <a class="social-icon" href="https://linkedin.com/in/mpho-theletsane2a98a7198">
+                <i class="fa-brands fa-linkedin fa-2xl"></i>
+               </a>
+            
+
+            
+                
+            
+            
+                    <h2>Contact form</h2>
+                    <form action="https://formsubmit.co/mphojoyce29@gmail.com" method="POST"
+                        
+                        <label for="name:">Name:</label>
+                        <input type="text" name="name" required>
+                        <p><label for="email:">Email:</label>
+                        <input type="email" name="Email:" required></p>
+                        <p><label for="feedbackStatement">Tell me who are you?</label></p>   
+                        
+                        <select name="_subject" id="subject">
+                            <option value="Interview Opportunity">Interview Opportunity</option required>
+                            <option value="Recruiter">Recruiter</option>
+                            <option value="Other">Other</option>
+                            </select>
+                          <p> <label for="message:">Message:</label></p>
+                            <textarea name="message:" cols="50" rows="7" placeholder="(Please help me understand how I can help you...)"></textarea>
+                            <p> <label for="feedbackStatement">Rate my website:</label></p>
+                            <p>
+                                <input type="radio" name="rating" value="Good" required>
+                                <label for="rating">Good</label>
+                                <input type="radio" name="rating" value="Fair">
+                                <label for="rating">Fair</label>
+                                <input type="radio" name="rating" value="Poor">
+                                <label for="rating">Poor</label>
+                            </p>
+                
+                            <p> <button type="submit">Submit</button> </p>
+                    </form>
+
+                </div>
+            </aside>
+            
+         
+
+        </div>
+    </footer> 
 </body>
 </html>
